@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>Ember Skeleton</title>
+    <link rel="stylesheet" href="assets/app.css" media="screen" />
+    
+    <script src="assets/loader.js"></script>
+    <script src="assets/app.js"></script>
+    <script type="text/javascript">
+      loader.require('app/app');
+    </script>
+    
+  </head>
+  <body>
+    <script type="text/x-handlebars" data-template-name="application">
+      <div class=navbar>
+        <div class=navbar-inner>
+          <div class=container>
+            <a class=brand><h3>Monitor</h3></a>
+            <div class=nav-collapse>
+              <ul class=nav>
+                <li class=active><a href='#'>Patient Dashboard</a></li>
+              </ul>
+            </div>
+            <ul class='nav pull-right'>
+    
+            </ul>      
+          </div>
+        </div>
+      </div>
+      <div class=container>
+        <section>
+          <div class='row'>
+            {{outlet}}
+          </div>
+        </section>
+      </div>
+
+    </script>
+  
+    <script type="text/javascript">
+    </script>
+  </body>
+</html>

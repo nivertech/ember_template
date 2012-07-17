@@ -1,0 +1,27 @@
+<form class="well form-inline login-box">
+  <fieldset>
+    <div class="control-group">
+      <label class="control-label">Email</label>
+      <div class="controls">
+        {{view Em.TextField class="span2 input-medium" valueBinding="controller.email"}}
+        <span class="help-inline">{{controller.errors.email}}</span>
+      </div>
+    </div>
+    
+    <div class="control-group">
+      <label class="control-label">Password</label>
+      <div class="controls">
+        {{view Em.TextField class="span2 input-medium" valueBinding="controller.password"}}
+        <span class="help-inline">{{controller.errors.password}}</span>
+      </div>
+    </div>
+    
+    {{#view Em.View class="btn btn-primary" type="submit" tagName="button"}}
+      <div {{action "gotoLoginInProgress" on="click"}}>
+        Login
+      </div>
+    {{/view}}
+  </fieldset>
+</form>
+
+
